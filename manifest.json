@@ -1,0 +1,16 @@
+{
+  "name": "Remove Tumblr Spam",
+  "description": "Sponsored and Recommended: GTFO",
+  "version": "1.0.1",
+  "icons": { "128": "remove-tumblr-spam.png" },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.tumblr.com/dashboard*"],
+      "js": ["myscript.js"]
+    }
+  ],
+  "manifest_version": 2
+}
